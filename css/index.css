@@ -1,0 +1,102 @@
+.github-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background-color: #24292e; /* GitHub 느낌 */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.github-link:hover {
+  background-color: #444c56;
+  transform: translateY(-2px);
+}
+
+.github-link:active {
+  transform: translateY(0);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* 정사각형 */
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+.works-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.work-card {
+  display: flex;
+  gap: 20px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  align-items: center;
+}
+
+.work-media {
+  flex: 1;
+}
+
+.work-media img,
+.work-media iframe {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.work-info {
+  flex: 1;
+}
+
+.work-info h3 {
+  margin-bottom: 10px;
+}
+
+.work-info p {
+  color: #444;
+  line-height: 1.5;
+}
+
+.work-video {
+  margin-top: 15px;
+}
+
+.work-video iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .work-card {
+    flex-direction: column;
+  }
+}
+
+#til {
+  margin-top: 60px;
+}
+
+#about {
+  padding-top: 40px;
+}
